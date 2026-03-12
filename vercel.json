@@ -1,13 +1,8 @@
 {
   "version": 2,
   "installCommand": "cd frontend && npm install && chmod -R +x node_modules/.bin",
-  "buildCommand": "cd frontend && npm run build",
+  "buildCommand": "cp -r backend api/backend && cd frontend && npm run build",
   "outputDirectory": "frontend/dist",
-  "functions": {
-    "api/index.py": {
-      "includeFiles": "backend/**"
-    }
-  },
   "rewrites": [
     { "source": "/api/:path*", "destination": "/api/index" }
   ]

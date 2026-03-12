@@ -40,6 +40,9 @@ dist-ssr/
 *.log
 docker-compose.override.yml
 
+# ── Vercel build artefacts ────────────────────────────────────────────────────
+api/backend/
+
 # ── Database ──────────────────────────────────────────────────────────────────
 *.db
 *.sqlite
